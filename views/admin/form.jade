@@ -1,0 +1,11 @@
+extends ../layout.jade
+block content
+  div(class="col-md-5 center-block float-out margin-top text-left")
+    h1 Login Admin
+    form(method="POST" action="/admin" style="margin-top: 1.5em")
+      div(class="form-group")
+        label Password
+        input(type="password" name="password" placeholder="Administrator password" class="form-control")
+      div(class="form-group text-right")
+        input(type="submit" class="btn btn-info" value="Submit")
+        

@@ -1,0 +1,10 @@
+extends ../layout.jade
+block content
+  div(class="col-md-5 center-block float-out margin-top text-left")
+    h1 Delete #[span= product.title]
+    form(method="post" action="/menu/#{product.id}?_method=delete" style="margin-top:1.5em;")
+      div(class="form-group")
+        label Password
+        input(type="password" name="password" placeholder="Password" class="form-control")
+      div(class="form-group text-left")
+        input(type="submit" value="Delete" class="btn btn-info")

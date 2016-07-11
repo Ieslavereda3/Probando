@@ -1,0 +1,10 @@
+extends ../layout.jade
+block content
+  h2(class="pacifico big green text-center") Menu
+  p(class="text-center") Quality prodcuts in your table.
+  each product in products
+    div(class="col-md-4 col-sm-6 col-xs-12 inline-block text-center")
+      h3(class="pacifico")= product.title
+      img(src="#{ product.image.url }" class="col-xs-7 col-md-4 float-out") 
+      p(style="margin-top: 1em;")
+        small(class="lato small") $#{product.pricing} USD

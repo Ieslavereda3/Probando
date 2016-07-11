@@ -1,12 +1,21 @@
 {
-  "name": "openshift-cartridge-nodejs-template",
-  "version": "1.0.1",
-  "description": "Custom Node.js cartridge for OpenShift - sample application",
-  "private": true,
-  "main": "start.js",
-  "scripts": {
-    "start": "node --use_strict start.js"
+  "name": "myfirst-backend",
+  "version": "1.0.0",
+  "description": "This is an example of a simple application using nodejs",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cloudinary": "^1.4.1",
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.5.3",
+    
   },
-  "author": "Ionut-Cristian Florescu <ionut.florescu@gmail.com>",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Guillermo Rivera",
   "license": "ISC"
 }

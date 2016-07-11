@@ -1,0 +1,26 @@
+extends ../layout.jade
+block content
+  h1 Administration panel
+  table(class="table")
+    caption Current products
+    thead
+      tr
+        th #
+        th Name
+        th Description
+        th Pricing
+        th Images
+        th Actions
+    tbody
+      each product in products
+        tr
+          td= product.id
+          td= product.title
+          td= product.description
+          td= product.pricing
+          td 
+            a(href="#{product.imageUrl}" class="btn") View image
+          td
+            a(href="/menu/edit/#{product.id}") Edit
+            =" - "
+            a(href="/menu/delete/#{product.id}") Delete

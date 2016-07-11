@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset=utf-8)
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title The best place to eat!
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+    link(rel="stylesheet" href="/css/main.css")
+    link(href="https://fonts.googleapis.com/css?family=Lato|Pacifico" rel="stylesheet")
+    link(rel="stylesheet" href="/css/animate.css")
+  body
+    nav(class="se-gray large-padding text-center")
+      ul(class="no-list")
+        li(class="col-md-3 inline-block pacifico")
+          a(class="green" href="/") Guillermo's Food
+        li(class="col-md-3 inline-block")
+          a(href="/menu") Menu 
+        li(class="col-md-3 inline-block")
+          a(href="/contact") Contact
+    block content
