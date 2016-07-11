@@ -9,8 +9,8 @@ var app_pass = "12345";
 
 cloudinary.config({
   cloud_name: "dvjlaaaiz",
-  api_key: "773718861546939",
-  api_secret: "xBQHJhxVzAPwLtGXJTdSMUVUA3M"
+  api_key: "***************",
+  api_secret: "*********************"
 });
 
 var app = express();
